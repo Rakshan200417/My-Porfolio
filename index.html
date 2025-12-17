@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rakshan | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- HERO (100%) -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Hi There!<br>I'm <span>Rakshan</span></h1>
+    <h3>Software Engineer & UI/UX Designer</h3>
+    <p>I craft modern, user-friendly interfaces that bring ideas to life.</p>
+    <a href="#about" class="btn">Learn More About Me</a>
+  </div>
+  <div class="hero-img">
+    <img src="images/hero.jpeg">
+  </div>
+</section>
+
+<!-- RIGHT ICON NAV -->
+<div class="right-nav">
+  <a href="#home">🏠</a>
+  <a href="#about">👤</a>
+  <a href="#resume">📄</a>
+  <a href="#portfolio">💼</a>
+  <a href="#contact">✉️</a>
+</div>
+
+<!-- MAIN LAYOUT (80%) -->
+<div class="main-layout">
+
+  <!-- SIDEBAR (ONLY ONCE) -->
+  <aside class="sidebar">
+    <img src="images/hero.jpeg" class="profile-img">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#resume">RESUME</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- ABOUT -->
+    <section id="about" class="section-box">
+      <h2>ABOUT ME</h2>
+      <p>I’m Rakshan, a passionate Software Engineering undergraduate with a strong interest in UI/UX design.
+        I love creating clean, functional, and visually appealing digital experiences.</p>
+
+      <div class="stats">
+        <div><h3>2+</h3><p>Years Learning</p></div>
+        <div><h3>10+</h3><p> Completed Projects</p></div>
+        <div><h3>5+</h3><p>Happy Clients</p></div>
+        <div><h3>100%</h3><p>Dedication</p></div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section-box">
+      <h2>RESUME</h2>
+
+      <p class="resume-bio">I am a motivated software engineering student specializing in UI/UX design, with experience in web development, responsive design, and creative problem solving.</p>
+
+      <div class="resume-row">
+        <div><h4>Education</h4><p>BSc (Hons) Software Engineering</p></div>
+        <div><h4>Skills</h4><p>Java, React, HTML, CSS, JS, UI/UX, Figma</p></div>
+      </div>
+
+      <div class="resume-row">
+        <div><h4>Languages</h4><p>English, Tamil, Sinhala</p></div>
+        <div><h4>Requirements</h4><p>Seeking internship or junior role in software development or UI/UX design</p></div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section-box">
+      <h2>PORTFOLIO</h2>
+
+      <div class="filters">
+        <button onclick="showCarousel('web')">Web Design & Development</button>
+        <button onclick="showCarousel('logo')">Branding & Graphic Design</button>
+        <button onclick="showCarousel('software')">Software Applications</button>
+        <button onclick="showCarousel('other')">Android/IOS Applications</button>
+      </div>
+
+      <div class="carousel">
+        <img id="carouselImg" src="images/c1.jpg">
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-box">
+  <h2>CONTACT ME</h2>
+
+  <form class="contact-form" action="https://formsubmit.co/kukarakshan2004@gmail.com" method="POST">
+    <!-- Name -->
+    <input type="text" name="name" placeholder="Full Name" required>
+
+    <!-- Email -->
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <!-- Message -->
+    <textarea name="message" placeholder="Type your message here" required></textarea>
+
+    <!-- Optional: Add a hidden field to prevent spam -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Submit button -->
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <p>📞 +94 75 602 7337</p>
+    <p>✉️ kukarakshan2004@gmail.com</a></p>
+    <p><i class="fa-solid fa-location-dot"></i> Homagama, Colombo, Sri Lanka</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/kuku.kukarakshan?mibextid=ZbWKwL"><a href="https://www.facebook.com/yourusername" target="_blank">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a></a>
+      <a href="https://www.instagram.com/rakshan7_k2?igsh=MWw2YjNudzg0b3Fqeg=="><a href="https://www.instagram.com/yourusername" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+      <a href="www.linkedin.com/in/kukarakshan-panchadsaram-84709b350"><a href="https://www.linkedin.com/in/yourusername" target="_blank">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
