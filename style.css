@@ -386,6 +386,18 @@ body {
     font-size: 14px;
   }
 
+  /* HERO */
+  .hero {
+    flex-direction: column;       /* stack text and image */
+    padding: 20px;                /* less padding */
+    text-align: center;
+    gap: 15px;                    /* smaller gap between text and image */
+  }
+
+  .hero-text {
+    margin-left: 0;               /* remove left margin */
+  }
+
   .hero-text h1 {
     font-size: 24px;
   }
@@ -404,30 +416,28 @@ body {
   }
 
   .hero-img img {
-    width: 100%;
+    width: 90%;                   /* smaller image width */
+    margin: 0 auto;               /* center image */
   }
 
+  /* HIDE SIDEBAR AND RIGHT NAV */
   .sidebar {
-    width: 100px;
-    padding: 10px;
+    display: none;
   }
 
   .right-nav {
-    right: 10px;
+    display: none;
   }
 
-  .right-nav a {
-    width: 30px;
-    height: 30px;
-    margin: 6px 0;
-    font-size: 14px;
-  }
-
+  /* MAIN LAYOUT */
   .main-layout {
     width: 100%;
     margin: 20px auto;
+    flex-direction: column;       /* stack content vertically */
+    gap: 20px;
   }
 
+  /* CAROUSEL & FILTERS */
   .carousel img {
     width: 100%;
   }
@@ -438,6 +448,7 @@ body {
     font-size: 14px;
   }
 
+  /* SECTION BOX */
   .section-box {
     padding: 25px;
   }
