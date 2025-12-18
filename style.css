@@ -1,4 +1,4 @@
-/* RESET */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +13,7 @@ html {
 body {
   background: #f4f6f8;
   color: #333;
+  font-size: 16px; /* Default desktop font */
 }
 
 /* ================= HERO (100%) ================= */
@@ -36,9 +37,19 @@ body {
   color: #00ffd5;
 }
 
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
 .hero-text h3 {
   margin: 15px 0;
   font-weight: 400;
+  font-size: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
 }
 
 .btn {
@@ -50,6 +61,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   border-radius: 30px;
+  font-size: 16px;
 }
 
 .hero-img img {
@@ -120,6 +132,7 @@ body {
   position: sticky;
   top: 100px;
   height: fit-content;
+  text-align: center;
 }
 
 .profile-img {
@@ -135,13 +148,13 @@ body {
 
 .sidebar ul li {
   margin: 25px 0;
-  text-align: center;
 }
 
 .sidebar ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  display: block;
 }
 
 /* ================= CONTENT ================= */
@@ -255,7 +268,6 @@ body {
   background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
   color: white;
   padding: 40px 20px;
-  
 }
 
 .footer-grid {
@@ -286,6 +298,9 @@ body {
   to { opacity: 1; transform: translateX(0); }
 }
 
+/* ================= MEDIA QUERIES (RESPONSIVE) ================= */
+
+/* Tablets & small screens */
 @media (max-width: 992px) {
   .hero {
     flex-direction: column;
@@ -297,72 +312,39 @@ body {
     margin-left: 0;
   }
 
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text h3 {
+    font-size: 18px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
   .hero-img img {
     width: 60%;
     margin: 20px auto 0 auto;
   }
-}
 
-@media (max-width: 576px) {
-  .hero-img img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .main-layout {
-    width: 90%;
-    gap: 30px;
-  }
-}
-
-@media (max-width: 992px) {
   .main-layout {
     width: 95%;
     gap: 20px;
+    flex-direction: column;
   }
-}
-@media (max-width: 1200px) {
-  .sidebar {
-    width: 180px;   /* Slightly smaller */
-    padding: 25px;
-  }
-}
 
-@media (max-width: 992px) {
   .sidebar {
-    width: 140px;   /* Smaller for tablets */
+    width: 140px;
     padding: 20px;
+    position: relative;
+    top: 0;
+    margin: 0 auto 30px auto;
   }
-}
 
-@media (max-width: 768px) {
-  .sidebar {
-    width: 120px;   /* Smaller for small tablets */
-    padding: 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .sidebar {
-    width: 100px;   /* Small mobile screens */
-    padding: 10px;
-  }
-}
-/* Slightly smaller on tablets */
-@media (max-width: 1200px) {
-  .right-nav a {
-    width: 40px;
-    height: 40px;
-    margin: 10px 0;
-    font-size: 18px; /* if you are using emojis or icons */
-  }
-}
-
-/* Smaller on tablets / small screens */
-@media (max-width: 992px) {
   .right-nav {
-    right: 20px;  /* Move a bit closer to edge */
+    right: 20px;
   }
 
   .right-nav a {
@@ -373,8 +355,63 @@ body {
   }
 }
 
-/* Mobile screens */
+/* Small tablets & large mobiles */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text h3 {
+    font-size: 16px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+
+  .sidebar {
+    width: 120px;
+    padding: 15px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text h3 {
+    font-size: 14px;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100px;
+    padding: 10px;
+  }
+
   .right-nav {
     right: 10px;
   }
@@ -385,10 +422,12 @@ body {
     margin: 6px 0;
     font-size: 14px;
   }
-}
 
+  .main-layout {
+    width: 100%;
+    margin: 20px auto;
+  }
 
-@media (max-width: 576px) {
   .carousel img {
     width: 100%;
   }
@@ -397,5 +436,9 @@ body {
     padding: 8px 12px;
     margin: 5px 5px 5px 0;
     font-size: 14px;
+  }
+
+  .section-box {
+    padding: 25px;
   }
 }
