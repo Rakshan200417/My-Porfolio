@@ -391,7 +391,7 @@ body {
     flex-direction: column;       /* stack text and image */
     padding: 20px;                /* less padding */
     text-align: center;
-    gap: 15px;                    /* smaller gap between text and image */
+    gap: 10px;                    /* smaller gap between text and image */
   }
 
   .hero-text {
