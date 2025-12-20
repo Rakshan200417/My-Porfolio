@@ -377,6 +377,7 @@ body {
   .sidebar {
     width: 120px;
     padding: 15px;
+    display: none;
   }
 }
 
